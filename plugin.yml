@@ -1,0 +1,12 @@
+name: SleepDemocracy
+main: me.zabzabdoda.SleepDemocracy.SleepDemocracy
+version: 1.0
+api-version: 1.16
+author: zabzabdoda
+description: SleepDemocracy plugin
+commands:
+  sleep:
+    description: Main command for sleep.
+    usage: |
+           /sleep add
+           Example: /sleep add - adds player.

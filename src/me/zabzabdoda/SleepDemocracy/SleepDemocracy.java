@@ -33,7 +33,7 @@ public class SleepDemocracy extends JavaPlugin implements Listener{
 	
 	public void onEnable() {
 		Bukkit.getServer().getPluginManager().registerEvents((Listener) this, (Plugin) this);
-		System.out.println(tag+"Enabling SleepDemocracy...");
+		Bukkit.getLogger().log(tag+"Enabling SleepDemocracy...");
 		playerCount = Bukkit.getServer().getOnlinePlayers().size();
 		File file = new File(this.getDataFolder() + File.separator + "config.yml");
 

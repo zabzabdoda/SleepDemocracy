@@ -49,7 +49,6 @@ public class SleepDemocracy extends JavaPlugin implements Listener{
 				p.store(fw, "You can edit this file, make sure Players-Needed-Percent \nis a number between 0 and 1");
 				percent = 0.5;
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}else {
@@ -121,7 +120,7 @@ public class SleepDemocracy extends JavaPlugin implements Listener{
 	@EventHandler
 	public void sleep(PlayerBedEnterEvent e) {
 		if(e.getBedEnterResult().equals(BedEnterResult.OK)) {
-			System.out.println(e.getPlayer().getDisplayName() + " has entered a bed");
+			Bukkit.getLogger().log(e.getPlayer().getDisplayName() + " has entered a bed");
 			inBed++;
 			sendPlayerTitle(ChatColor.GREEN + tag + inBed + " players sleeping out of the needed " + getMaxPlayersNeeded(), 10000);
 			if(inBed >= getMaxPlayersNeeded()) {
